@@ -1,0 +1,36 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>Django Tailwind</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		{% tailwind_css %}
+	</head>
+
+	<body class="bg-background">
+
+		<div class="container mx-auto m-20 rounded-2xl bg-white pb-2" >
+
+            <div class="flex space-x-1 px-3  border-b-2 border-gray">
+                <a class="mx-2 font-bold py-2 text-gray" href="#">Notification</a>
+                <a class="mx-2 font-bold py-2 border-b-4 border-purple " href="#">Todo</a>
+            </div>
+
+            <div class="flex py-2 select-none">
+                <ul class="mx-8 divide-y-2 divide-gray w-full">
+                    <li class="py-2"><input id="chkbox-1" type="checkbox" class="appearance-none peer/list-1"> <label for="chkbox-1" class="font-semibold peer-checked/list-1:line-through ml-2">Mandi</label> <p class="ml-7 text-gray select-none">www</p></li>
+                    <li class="py-2"><input id="chkbox-2" type="checkbox" class="appearance-none peer/list-2"> <label for="chkbox-2" class="font-semibold peer-checked/list-2:line-through ml-2">Working</label> <p class="ml-7 text-gray select-none">wdsadawdsa</p></li>
+                    <li class="py-2"><input id="chkbox-3" type="checkbox" class="appearance-none peer/list-3"> <label for="chkbox-3" class="font-semibold peer-checked/list-3:line-through ml-2">Football</label> <p class="ml-7 text-gray select-none">wwdaswfdafgafaf</p></li>
+                </ul>
+
+            </div>
+
+
+
+		</div>
+
+
+	</body>
+</html>
